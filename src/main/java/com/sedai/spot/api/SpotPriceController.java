@@ -34,6 +34,7 @@ public class SpotPriceController {
         status.put("totalRecords", repository.count());
         status.put("aws", repository.countByProvider("AWS"));
         status.put("azure", repository.countByProvider("AZURE"));
+        status.put("gcp", repository.countByProvider("GCP"));
         return status;
     }
 }

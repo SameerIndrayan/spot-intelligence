@@ -14,3 +14,5 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
+gcp:
+    api-key: ${GCP_API_KEY:}
